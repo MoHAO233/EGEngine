@@ -47,6 +47,8 @@ void Game::Draw() {
 
 void Game::Run(runFun Start, runFun Update) {
     Start();
+    Render();
+    Draw();
     while (1) {
         Update();
         Render();
