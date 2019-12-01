@@ -3,6 +3,7 @@
 
 #include "../GameObject/GameObject.h"
 #include "../GameObject/Vector2.h"
+#include "../GameObject/Text.h"
 #include "../Texture/Texture.h"
 #include "../Tool/Tool.h"
 #include "../Window/Window.h"
