@@ -24,3 +24,6 @@ $ g++ -c ./build/main.cpp -o ./build/main.o
 $ ./compile.bat
 ```
 
+## 开发 - Use
+参见[易游引擎使用参考](./doc/Home.md)
+
