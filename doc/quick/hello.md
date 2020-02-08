@@ -32,7 +32,7 @@ using namespace EGEngine;
  
 Game game = Game("Hello, World!"); 
  
-void Start() {} //Do sth in Game Beginng 
+void Start() {} //Do sth in Game Beginning 
  
 void Update() {} //Do sth in Game Running Time 
  
