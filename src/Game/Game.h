@@ -28,7 +28,7 @@ namespace EGEngine {
             void Draw();
         public:
             Game(const std::string name = "Game", const Vector2 Size = Vector2(120, 30));
-            GameObject* new_GameObject(const Vector2 Pos = Vector2(0, 0), const Texture Text = Texture(Vector2(0, 0)), const int Lay = 0);
+            GameObject* new_GameObject(GameObject* Object);
             bool Get_KeyDown(const char Key) { return ((GetAsyncKeyState(Key) & 0x8000) ? 1:0); }
             
             typedef void (*runFun)();

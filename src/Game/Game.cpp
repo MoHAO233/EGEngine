@@ -26,10 +26,9 @@ void Game::Render() {
     }
 }
 
-GameObject* Game::new_GameObject(const Vector2 Pos, const Texture Text, const int Lay) {
-    GameObject* obj =  new GameObject(Pos, Text, Lay);
-    screen.push(obj);
-    return obj;
+GameObject* Game::new_GameObject(GameObject* Object) {
+    screen.push(Object);
+    return Object;
 }
 
 void Game::Draw() {
