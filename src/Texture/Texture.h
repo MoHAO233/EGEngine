@@ -1,7 +1,7 @@
 #ifndef TEXTURE_H_
 #define TEXTURE_H_
 
-#include "..\GameObject\Vector2.h"
+#include "../GameObject/Vector2.h"
 #include <string>
 
 namespace EGEngine {
