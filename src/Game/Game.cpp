@@ -15,6 +15,11 @@ Game::Game(const std::string name, const Vector2 Size) {
 
 void Game::Render() {
     std::priority_queue<GameObject*> render = screen;
+    for (int i = 0; i < size.y; i++) {
+        for (int j = 0; j < size.x; j++) {
+            screenWin[i][j] = ' ';
+        }
+    }
     while (!render.empty()) {
         GameObject now = *render.top();
         render.pop();
@@ -31,16 +36,14 @@ GameObject* Game::new_GameObject(GameObject* Object) {
     return Object;
 }
 
+std::vector<std::string> screenLast;
+
 void Game::Draw() {
+    if (screenWin == screenLast) return;
+    screenLast = screenWin;
     ConsoleRun("cls");
     for (int i = 0; i < size.y; i ++) {
         printf("%s", screenWin[i].data());
-        screenWin[i].clear();
-    }
-    for (int i = 0; i < size.y; i ++) {
-        for (int j = 0; j < size.x; j ++) {
-            screenWin[i] += " ";
-        }
     }
 }
 
